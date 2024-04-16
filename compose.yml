@@ -1,0 +1,12 @@
+version: Compose specification
+
+service:
+    example-go:
+        build: .
+
+networks:
+    example-go-net:
+        name: example-go-net
+        ipam:
+            config:
+                -   subnet: 172.16.238.0/24
