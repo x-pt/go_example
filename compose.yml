@@ -1,0 +1,11 @@
+service:
+    example_go:
+        build: .
+        image: example-go
+
+networks:
+    example_go-net:
+        name: example_go-net
+        ipam:
+            config:
+                -   subnet: 172.16.238.0/24
